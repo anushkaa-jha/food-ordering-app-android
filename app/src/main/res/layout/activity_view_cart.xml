@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCart">
+
+    <GridView
+        android:id="@+id/cartContent"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:textSize="20sp"
+        android:numColumns="1" />
+
+    <TextView
+        android:id="@+id/foodCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cartContent"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:text="@string/foodCost" />
+
+    <TextView
+        android:id="@+id/delvCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodCost"
+        android:layout_alignStart="@id/deliveryFee"
+        android:textSize="15sp"
+        android:text="@string/delvCost"/>
+
+    <!-- Radio Buttons for Delivery Fee will sit here -->
+    <RadioGroup
+        android:id="@+id/deliveryFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/delvCost"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/rad_Reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radReg"/>
+        <RadioButton android:id="@+id/rad_Xpd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radXpd"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/taxCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/deliveryFee"
+        android:layout_marginBottom="25dp"
+        android:textSize="20sp"
+        android:text="@string/taxCost"/>
+
+    <!-- totCost will consist of foodCost + taxCost + Delivery Fee -->
+    <TextView
+        android:id="@+id/totCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/taxCost"
+        android:layout_marginBottom="25dp"
+        android:textSize="20sp"
+        android:text="@string/totCost"/>
+
+    <Button android:id="@+id/finOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/totCost"
+        android:layout_marginBottom="25dp"
+        android:textSize="20sp"
+        android:onClick="kurgerBongd"
+        android:text="@string/finOrder"/>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">KurgerBingFinal</string>
+
+    <!-- Cart Labels -->
+    <string name="foodCost">Food Cost: </string>
+    <string name="delvCost">Delivery Fee:</string>
+    <string name="taxCost">Tax: </string>
+    <string name="totCost">Total Cost: </string>
+
+    <!-- Delivery Fee Radio Buttons -->
+    <string name="radReg">Regular Fee: $3.25</string>
+    <string name="radXpd">Expedited Fee: $9.50</string>
+
+    <!-- Button Text -->
+    <string name="finOrder">Finalize Order</string>
+    <string name="submit">Submit Order</string>
+    <string name="newOrd">Start New Order</string>
+
+    <!-- Date Picker Label -->
+    <string name="datePicker">Choose date for delivery:</string>
+
+    <!-- Matthew Strings -->
+    <string name="addToCartBtn">Add</string>
+    <string name="quantityDialogTitle">Enter Quantity</string>
+    <string name="cancelDialogBtn">Cancel</string>
+    <string name="viewCartBtn">View Cart</string>
+    <string name="nutritionBtn">Nutrition</string>
+</resources>
